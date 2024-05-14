@@ -1,0 +1,22 @@
+.background{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #5891d4;
+    border-radius: 15px;
+    cursor:pointer;
+
+    &:hover{
+        background-color: #5891d4;
+
+        .text{
+            color: white;
+        }
+
+    }
+
+    .text{
+        color: #5891d4;
+    }
+}

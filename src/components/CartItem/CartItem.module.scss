@@ -1,0 +1,71 @@
+.Product {
+  width: 80%;
+  display: flex;
+  margin: 10px 0;
+  align-items: flex-start;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+
+  img {
+    width: 30%;
+  }
+
+  .Description {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    .Text {
+      h3 {
+      }
+      .Cost {
+        color: #8b8b8b;
+      }
+    }
+
+    .Counter {
+      display: flex;
+      align-items: center;
+      margin: auto 0;
+
+      div {
+        cursor: pointer;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .DeleteButton {
+    align-self: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Product {
+    width: 100%;
+    margin: 5px 0;
+
+    img {
+      width: 40%;
+    }
+
+    .Description {
+      display: flex;
+      flex-direction: column;
+      .Text {
+        font-size: 10px;
+        margin: 0 0 0 2%;
+      }
+
+      .Counter {
+        div {
+          margin: 10px 5px 0 5px;
+
+        }
+      }
+    }
+  }
+}
